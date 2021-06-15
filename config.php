@@ -17,8 +17,8 @@
     define('CLIENT_ID', 'AewC4bskSTQjp9VCMPAdUNMYNrzYHr-EYiahuphwfJ7xSdI283UL4sgnCkZNMx4VyMl7FrzcLlaByH6g');
     define('CLIENT_SECRET', 'EGn8JpmGm9dfvM8K1svEHRE4lUmBj8gYqQGqCaWQBh4sK6oHlJMDFSLwwD71Pkw7Lk1Wjy_tlkP0KWaS');
     
-    define('PAYPAL_RETURN_URL', 'http://localhost:7882/Donation-Webiste-Payment/success.php');
-    define('PAYPAL_CANCEL_URL', 'http://localhost:7882/Donation-Webiste-Payment/cancel.php');
+    define('PAYPAL_RETURN_URL', 'https://e-donation.herokuapp.com//success.php');
+    define('PAYPAL_CANCEL_URL', 'https://e-donation.herokuapp.com/cancel.php');
     define('PAYPAL_CURRENCY', 'USD'); // set your currency here
     
     // Connect with the database
