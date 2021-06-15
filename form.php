@@ -217,18 +217,7 @@
     <title>Document</title>
 </head>
 <body>
-  <?php 
-      if(isset($_POST['submit']))
-      {
-        $fname=$_POST['fname'];
-        $lname=$_POST['lname'];
-        $email=$_POST['email'];
-        $phn=$_POST['phone'];
-        $amount=$_POST['amount'];
-        $sql="insert into donator(first_name,last_name,email,phone_no,amount) values('{$fname}','{$lname}','{$email}','{$phn}','{$amount}')";
-        $result=mysqli_query($db,$sql);
-      }
-  ?>
+  
 <div id="header"></div>
  <div class="testbox">
     <form action="charge.php" method="post">
