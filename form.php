@@ -241,7 +241,7 @@
             <input id="address" type="text" name="email" required />
           </div>
           <div class="item">
-            <label for="phone">Phone Number</label>
+            <label for="phone">Phone Number<span>*</span></label>
             <input id="phone" type="tel"   name="phone" required/>
           </div>
           </fieldset>
