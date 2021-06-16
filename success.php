@@ -12,9 +12,19 @@
     $(function()
     {
         $("#header").load("navbar.html"); 
-       $("#footer").load("footer.html"); 
+       $("#footer").load("footer.php"); 
     });
   </script> 
+  <style>
+    .container{
+           border-radius: 5px;
+           /* background-color: #f2f2f2;*/
+            padding:20px;
+            margin-top: 80px;
+            margin-bottom: 10px;
+
+    }
+    </style>
 </head>
 <body>
 <div id="header"></div>
@@ -47,7 +57,7 @@ if (array_key_exists('paymentId', $_GET) && array_key_exists('PayerID', $_GET)) 
             $insert = $db->query("INSERT INTO payments(payment_id, payer_id, payer_email, amount, currency, payment_status) VALUES('". $payment_id ."', '". $payer_id ."', '". $payer_email ."', '". $amount ."', '". $currency ."', '". $payment_status ."')");
         }
  
-        echo "Payment is successful. Your transaction id is: ". $payment_id;
+       /* echo "Payment is successful. Your transaction id is: ". $payment_id;*/
     } else {
         echo $response->getMessage();
     }
@@ -55,6 +65,31 @@ if (array_key_exists('paymentId', $_GET) && array_key_exists('PayerID', $_GET)) 
     echo 'Transaction is declined';
 }
 ?>
+<br/><br/>
+<div class="container">    
+  <h1>Your Payment is Succesfull. Thank You for your donation</h1>    
+  <table class="table table-striped">
+      <tr>
+        <th>E-mail</th>
+        <td><?php echo $payer_email ?></td>
+      </tr>
+        <th>Transaction ID:</th>
+        <td><?php echo $payment_id ?></td>
+      </tr>
+      <tr>
+        <th>Donation Amount</th>
+        <td><?php echo $amount ?></td>
+      </tr>
+      <tr>  
+        <th>Currency</th>
+        <td><?php echo $currency ?></td>
+      </tr>
+      <tr>
+        <th>Payment Status</th>
+        <td><button type="button" class="btn btn-success"><?php echo $payment_status ?></button></td>
+      </tr>
+  </table>
+</div>
 <div id="footer"></div>
 </body>
 </html>    

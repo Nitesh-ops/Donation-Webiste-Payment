@@ -7,6 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="JS/sweetalert.js"></script>
+    <?php
+  if(isset($_SESSION['status']) && $_SESSION['status']!='')
+  {
+  ?>
+  <script>
+      swal("Communication Received ", "We Will reply you Shortly", "success");
+  </script>
+  <?php 
+      unset($_SESSION['status']);
+  }
+  ?>
 </head>
 <body>
     <footer class="bg-light text-center text-white">
@@ -54,7 +66,7 @@
             <a
               class="btn btn-primary btn-floating m-1"
               style="background-color: #0082ca;"
-              href="https://www.linkedin.com/in/nitesh-singh-0bb145140/"
+              href="https://www.linkedin.com/in/nitesh19singh/"
               role="button"
               ><i class="fab fa-linkedin-in"></i
             ></a>

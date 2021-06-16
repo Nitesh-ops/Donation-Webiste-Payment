@@ -28,7 +28,7 @@
 	$dbname = "e9IpnahYdV";
     
 	$db = mysqli_connect($servername, $username, $password, $dbname);
-    /*$db = new mysqli('localhost', 'root', '', 'donation_grip');*/ 
+    /*$db = new mysqli('localhost', 'root', '', 'donation_grip');*/
     
     if ($db->connect_errno) {
         die("Connect failed: ". $db->connect_error);

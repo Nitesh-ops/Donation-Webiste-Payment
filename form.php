@@ -14,7 +14,7 @@
         $(function()
         {
             $("#header").load("navbar.html"); 
-           $("#footer").load("footer.html"); 
+           $("#footer").load("footer.php"); 
         });
       </script> 
       <style>
