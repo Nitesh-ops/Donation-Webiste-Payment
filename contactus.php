@@ -16,7 +16,9 @@
         });
       </script> 
       <style>
-          body {font-family: Arial, Helvetica, sans-serif;}
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
           
             * {box-sizing: border-box;}
 
