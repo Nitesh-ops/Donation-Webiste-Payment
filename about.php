@@ -50,7 +50,7 @@
         <p class="title">Developer</p>
         <p>Think Twice Code Once</p>
         <p>niteshsingh.ns44@gmail.com</p>
-        <p><button class="btn btn-primary btn-lg btn-block">Contact</button></p>
+        <p><a href="niteshsingh.ns44@gmail.com"><button class="btn btn-primary btn-lg btn-block">Contact</button></a></p>
         </center>
 </div>
 <div id="footer"></div>
